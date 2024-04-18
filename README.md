@@ -8,7 +8,8 @@ This project utilizes the following tools:
 - [faiss] vector store db .
 - [langchain] to build a RAG system .
 - [chainlit] UI.
-- 
+
+  
 # Project Setup Guide
 
 1. **Install git for  Linux (Debian/Ubuntu)**
@@ -26,20 +27,20 @@ This project utilizes the following tools:
    - Description: This step installs the Python 3.10 virtual environment package, necessary for creating isolated Python environments.
    - Command:
      ```
-     !apt install python3.10-venv
+     apt install python3.10-venv
      ```
 4. **Create Virtual Environment**
    - Description: This step creates a virtual environment named `.venv` in the current directory and activates it.
    - Commands:
      ```
-     !python -m venv .venv
-     !source .venv/bin/activate
+     python -m venv .venv
+     source .venv/bin/activate
      ```
 5. **Install Requirements**
    - Description: This step installs Python dependencies listed in the `requirements.txt` file.
    - Command:
      ```
-     !pip install -r requirements.txt
+     pip install -r requirements.txt
      ```
  6. **Create a 'data'  folder , add your Pdfs into , create 'vs-db' folder and Run the  script to prepare the vectore store db**
     - Commands:
