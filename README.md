@@ -41,9 +41,11 @@ This project utilizes the following tools:
      ```
      !pip install -r requirements.txt
      ```
- 6. **Add your Pdfs to data folder and Run the  script to prepare the vectore store db**
-    - Command:
+ 6. **Create a 'data'  folder , add your Pdfs into , create 'vs-db' folder and Run the  script to prepare the vectore store db**
+    - Commands:
      ```
+     `mkdir data`
+     `mkdir vs-db`
      `python Generate-vs-db.py`
      ```
 7. **Download Pretrained Model**
