@@ -44,9 +44,9 @@ This project utilizes the following tools:
  6. **Create a 'data'  folder , add your Pdfs into , create 'vs-db' folder and Run the  script to prepare the vectore store db**
     - Commands:
      ```
-     `mkdir data`
-     `mkdir vs-db`
-     `python Generate-vs-db.py`
+     mkdir data
+     mkdir vs-db
+     python Generate-vs-db.py
      ```
 7. **Download Pretrained Model**
    - Description: This step downloads a pretrained language model required for the project's implementation.
