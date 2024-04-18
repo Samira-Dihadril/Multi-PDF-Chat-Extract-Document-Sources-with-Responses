@@ -52,14 +52,14 @@ This project utilizes the following tools:
    - Description: This step downloads a pretrained language model required for the project's implementation.
    - Command:
      ```
-     !wget https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.1-GGUF/resolve/main/mistral-7b-instruct-v0.1.Q8_0.gguf
+     wget https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.1-GGUF/resolve/main/mistral-7b-instruct-v0.1.Q8_0.gguf
      ```
 8. **Get your authtoken key , Run the Model and Setup Tunnel**
    - Description: This step runs the Python script `chains-llm.py` using the `chainlit` tool, and sets up an ngrok tunnel to expose a local server.
    - Commands:
      ```
-     !chainlit run chains-llm.py &>/content/logs.txt &
-     !ngrok config add-authtoken '<put-your-authtoken-key-here>'
+     chainlit run chains-llm.py &>/content/logs.txt &
+     ngrok config add-authtoken '<put-your-authtoken-key-here>'
      from pyngrok import ngrok
      ngrok_tunnel = ngrok.connect(8000)
      print('Public URL:', ngrok_tunnel.public_url)
@@ -71,7 +71,7 @@ This project utilizes the following tools:
    - Description: This step stops the execution of the `chainlit` tool and terminates the ngrok tunnel.
    - Commands:
      ```
-     !killall chainlit
+     killall chainlit
      ngrok.kill()
      ```
 
